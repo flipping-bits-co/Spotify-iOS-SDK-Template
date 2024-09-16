@@ -15,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC3597962C98DA12008B1692 /* Spotify-iOS-SDK-Template-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spotify-iOS-SDK-Template-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EC3597972C98DC70008B1692 /* Spotify iOS SDK Template-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spotify iOS SDK Template-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC68D11B2C98D5BF00C36C80 /* Spotify iOS SDK Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify iOS SDK Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC68D11E2C98D5BF00C36C80 /* SpotifyiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyiOS.swift; sourceTree = "<group>"; };
 		EC68D1202C98D5BF00C36C80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,10 +55,12 @@
 		EC68D11D2C98D5BF00C36C80 /* Spotify iOS SDK Template */ = {
 			isa = PBXGroup;
 			children = (
+				EC3597962C98DA12008B1692 /* Spotify-iOS-SDK-Template-Info.plist */,
 				EC68D11E2C98D5BF00C36C80 /* SpotifyiOS.swift */,
 				EC68D1202C98D5BF00C36C80 /* ContentView.swift */,
 				EC68D1222C98D5C100C36C80 /* Assets.xcassets */,
 				EC68D1242C98D5C100C36C80 /* Preview Content */,
+				EC3597972C98DC70008B1692 /* Spotify iOS SDK Template-Bridging-Header.h */,
 			);
 			path = "Spotify iOS SDK Template";
 			sourceTree = "<group>";
@@ -104,6 +108,7 @@
 				TargetAttributes = {
 					EC68D11A2C98D5BF00C36C80 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -205,7 +210,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -262,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -277,12 +282,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Spotify iOS SDK Template/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spotify-iOS-SDK-Template-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,9 +301,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flippingbits.Spotify-iOS-SDK-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Spotify iOS SDK Template/Spotify iOS SDK Template-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,12 +317,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Spotify iOS SDK Template/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spotify-iOS-SDK-Template-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,9 +336,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flippingbits.Spotify-iOS-SDK-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Spotify iOS SDK Template/Spotify iOS SDK Template-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
